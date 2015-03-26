@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  font-family: ubuntu, helvetica;
+}
+
+#header {
+  background-color: rgb(0, 165, 150);
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+img[src="images/screen2.png"] {
+  border-radius: 7em;
+  float: left;
+  margin: 1.5%;
+  max-width: 7%;
+}
+
+#title {
+  float: left;
+  width: 40%;
+  min-width: 20em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin: 5% 0 1% 0;
+}
+
+#sign, a[href="https://www.udacity.com/course/nd000"] {
+  color: rgb(246, 169, 38);
+  font-weight:700;
+  text-decoration: none;
+  margin-bottom: 3%;
+}
+
+#menu {
+  float: right;
+  width: 50%;
+  text-align: center;
+  margin: 4.3% 0;
+}
+
+a[href^="#stage"] {
+  background-color: rgb(246, 169, 38);
+  padding: .5em 1em;
+  border: .1em solid white;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+a[href^="#stage"]:hover {
+  background-color: rgb(255, 185, 50);
+  border-color: rgb(125, 125, 125);
+  color: rgb(125, 125, 125);
+}
+
+.stages {
+  width: 70%;
+  margin: 12% 15% 5% 15%;
+}
+
+/*anchor solution found here: http://jsfiddle.net/kizu/gfXJJ/*/
+.anchor {
+  position: absolute;
+  margin: -10em;
+}
+
+.stag {
+  border-left: .25em solid rgb(246, 169, 38);
+  padding-left: .5em;
+  margin-bottom: 10%;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 5%;
+}
+
+.lesson {
+  margin: 0 0 5% 2.5%;
+  border-bottom: .2em solid rgb(0, 165, 150);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.concept {
+  margin-left: 2.5%;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 4% 0 1.5% 0;
+}
+
+.points {
+  line-height: 1.5em;
+}
+
+.add {
+  padding-left: 2%;
+}
+
+code {
+  color: rgb(0, 165, 150);
+  font-weight: bold;
+  font-size: 120%
+}
+
+
+img[src="images/selectors.png"] {
+  width: 35%;
+  float: right;
+  margin: 1% 0 0 1%;
+}
+
+#footer {
+  background-color: rgb(0, 165, 150);
+  overflow: auto;
+  text-align: center;
+  line-height: 2em;
+}
+
+.quote {
+  background-color: rgb(246, 169, 38);
+  width: 35%;
+  float: left;
+  margin-left: 10%;
+  padding: 1%;
+}
+
