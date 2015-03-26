@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Intro to Programming Nanodegree (notes by stanus)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div id="header">
+    <a href="learning_summary.html">
+        <img src="images/screen2.png" title="home" alt="screenshot">
+    </a>
+      
+      <div id="title">
+        <h1>Intro to Programming</h1>
+        <div id="sign">
+          my <a href="https://www.udacity.com/course/nd000" title="my udacity nanodegree">Udacity
+          Nanodegree</a> notes
+        </div>
+      </div>
+      <div id="menu">
+        <a href="#stage1">Stage 1</a>
+        <a href="#stage2">Stage 2</a>
+      </div>
+    </div>
+      
+    <div class="stages">
+
+      <div class="anchor" id="stage1"> </div>
+
+      <div class="stag">
+        <h2>Stage 1: Make Your Own Webpage</h2>
+
+        <div class="lesson">
+          <h3>Lesson 1: The Basics of the Web and HTML</h3>
+            
+          <div class="concept">
+            <h4>world wide web</h4>
+
+            <ul class="points">
+              <li>
+                html: HyperText Markup Language - programming language to code
+                html documents (almost every web page)
+              </li>
+              <li>
+                http: HyperText Transfer Protocol - protocol used for
+                communication between computer browser, internet and servers
+                which host sites
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>html markup</h4>
+
+            <ul class="points">
+              <li>
+                markup - code that determines what content (e.g. text) looks like
+                on a web page
+              </li>
+              <li>element:
+                <code>
+                &#60;opening tag&#62;contents&#60;/closing tag&#62;
+                </code>
+                <ul class="points add">
+                  <li>
+                    either <em>inline</em> (refers to content within the
+                    line - like bold or link) or <em>block</em> (creates
+                    invisible box around the content - like paragraph)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>key take-aways</h4>
+
+            <ul class="points">
+              <li>
+                computers are (awesomely) stupid - they do what is programmed, all
+                of it and nothing but it, as long as they can understand it (bold
+                emphasis on <strong><em>correct syntax</em></strong>)
+              </li>
+              <li>
+                memorizing not necessary - no point in memorizing details as
+                there are too many to remember anyway (thumbs up for me and other
+                <a href="http://fishbowlexperiment.com/images/cartoon1.gif">
+                goldfish memory</a> people) 
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>vocab (copied from udacity website)</h4>
+
+            <ul class="points">
+              <li>
+                <b>Tag</b>: An HTML tag is always contained within angled
+                brackets. Most tags have an opening tag and a closing tag.
+                Some tags (called "void" tags) do not require a closing tag
+                (like the <code>&#60;br&#62;</code> tag).
+              </li>
+              <li>
+                <b>Element</b>: An HTML element refers to everything within a
+                set of opening and closing tags.
+              </li>
+              <li>
+                <b>Attribute</b>: This is a property of an HTML element. For
+                example, to set the href attribute of an anchor tag to the
+                Udacity URL, you would write
+                <code>&#60;a href="www.udacity.com"&#62;</code>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Lesson 2: Creating a Structured Document with HTML</h3>
+
+          <div class="concept">
+            <h4>structure of a document</h4>
+
+            <ul class="points">
+              <li>
+                html is used for classification of webpage structure through its
+                syntax, rules and basic element - tag
+              </li>
+              <li>
+                dom: Document Object Model - structure tree of a document
+                organised by elements
+              </li>
+              <li>
+                css - language to define a style and thus change how elements
+                look on the page
+              </li>
+              <li>
+                good explanation in the following 
+                <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3555039510/m-2596138815">video</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>boxifying (real word)</h4>
+
+            <ul class="points">
+              <li>
+                separating content into visual "boxes" within the webpage in a
+                meaningful way (this part consist of these parts which consist
+                of...)
+              </li>
+              <li>
+                boxes are then the base for structuring the code into parts and
+                subparts (with use of <code>&#60;div&#62;, &#60;p&#62;, &#60;span&#62;</code>
+                and other tags)
+              </li>
+              <li>
+                best done from biggest to smallest "boxes" (good hint is to
+                sketch it out by pencil on a printout at the beginning)
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>class attributes</h4>
+
+            <ul class="points">
+              <li>
+                serve to "mark" elements (like labels on boxes)
+              </li>
+              <li>
+                attached to elements within opening tags: <code>&#60;tag
+                class:"class attribute name"&#62;</code>
+              </li>
+              <li>
+                enable mass application of style changes to all elements within
+                chosen class
+                <ul class="points add">
+                  <li>
+                    <strong>extremely important</strong> in order to avoid
+                    repetition within code and thus increase efficiency of code
+                    (positive effect on speed, as well as costs and time related
+                    to project)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Lesson 3: Adding CSS Style to HTML Structure</h3>
+            
+          <div class="concept">
+            <h4>css: Cascading Style Sheets</h4>
+
+            <ul class="points">
+              <li>
+                cascading means that given rules apply to the element in
+                question,as well as all its child elements, unless they have
+                separate (more specific) rules
+              </li>
+              <li>
+                short summary and reference can be found
+                <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/m-3611108698">
+                here</a>
+              </li>
+              <li>
+                css functionality reference docu can be found
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+                  here</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>adding style</h4>
+
+            <ul class="points">
+              <li>
+                with css we can define style in a separate stylesheet file(s)
+              </li>
+              <li>
+                it can also be done within our html document or even within a
+                line, though it should be avoided
+              </li>
+              <li>
+                to add css style to html file through stylesheet, head of the
+                file has to include link to css file <code>&#60;link
+                rel="stylesheet" type="text/css" href="name of css file"&#62;
+                </code>
+                <ul class="points add">
+                  <li>
+                    <a href="http://www.w3schools.com/tags/att_link_rel.asp">
+                    rel</a>: relationship - relationship between html file and the
+                    file we are linking to
+                  </li>
+                  <li>
+                    <a href="http://www.w3schools.com/tags/att_link_type.asp">
+                    type</a> - type of file we are linking to
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>selector</h4>
+
+            <img src="images/selectors.png" alt="examples of selectors">
+
+            <ul class="points">
+              <li>
+                element to which defined style will be applied (<a
+                href="https://css-tricks.com/how-css-selectors-work/">more
+                info</a>)
+              </li>
+              <li>
+                application: we apply defined value (e.g. blue) to defined
+                attribute (e.g. 
+                <a href="http://meyerweb.com/eric/css/colors/">color</a>)
+                of defined selector (e.g. paragraph)
+              </li>
+              <li>
+                selectors need to make logical sense to the structure of the
+                document to ensure code efficiency (avoiding repetition)
+              </li>
+              <li>
+                example types of selectors:
+                <ul class="points add">
+                  <li>
+                    tag e.g. paragraph: <code>p {attribute:value;}</code>
+                  </li>
+                  <li>
+                    class: <code>.class_name {attribute:value}</code>
+                  </li>
+                  <li>
+                    attribute: <code>tag[attribute="value"] {attribute: value;}</code>
+                    (<a href="https://css-tricks.com/attribute-selectors/">more info</a>)
+                  </li>
+                </ul>
+              </li>
+              <li>
+                for easier orientation, each attribute/value pair is on separate
+                indented line
+              </li>
+            </ul>
+            
+          </div>
+
+          <div class="concept">
+            <h4>semantic tagging</h4>
+
+            <ul class="points">
+              <li>
+                we should use tags that express the meaning of their content,
+                for example:
+                <ul class="points add">
+                  <li>
+                    if a text is a heading to what comes after it, we should tag it
+                    <code>h{1..6}</code> rather than just increase its size, make it
+                    bold and give it borders/margins
+                  </li>
+                  <li>
+                    if something is just part of a normal paragraph and we want to
+                    make it stand out by bigger size, bold font and borders <strong>but
+                    it is not a logical heading to what comes after it</strong>, we
+                    should do the style changes through e.g. class, but we should
+                    not use <code>h</code> tag just because it comes with the style
+                    changes we want
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+            <h4>box sizing &#38; positioning</h4>
+
+            <ul class="points">
+              <li>
+                one of the most complex concepts in css
+              </li>
+              <li>
+                all html elements are boxes and each box has 4 components
+                <ul class="points add">
+                  <li>
+                    margin, border, padding, content
+                  </li>
+                  <li>
+                    size of each of these can be either set as number of pixels
+                    (requires often manual readjustment), a percentage of screen
+                    size
+                  </li>
+                  <li>
+                    most preferable solution to box sizing (way to automatize setting
+                    those 4 elements) is to set <code>box-sizing: border-box</code>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                boxes are positioned below each other by default, unless
+                following rule is added to the parent <code>display: flex;</code>
+              </li>
+              <li>
+                good summary video can be found
+                <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/m-3642758701">here</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="concept">
+              <h4>code-test-refine cycle (from nothing to web page)</h4>
+
+            <div class="points">
+              <ul>
+                <li>
+                  a good start is with printout, where one can sketch out the
+                  boxes, define some future semantic tags, list key style 'notes'
+                  (from biggest to smallest)
+                </li>
+              </ul>
+              <ol>
+                <li>
+                  look for natural boxes
+                </li>
+                <li>
+                  look for repeated styles and semantic elements
+                </li>
+                <li>
+                  write your html
+                </li>
+                <li>
+                  apply styles (from biggest to smallest)
+                </li>
+                <li>
+                  fix things
+                </li>
+              </ol>
+              <ul>
+                <li>
+                  keep repeating 3..5 until the product satisfies design
+                  requirements
+                </li>
+                <li>
+                  for testing 'on the go' and fine tuning, one can 
+                  <a href="images/udacity-alt.png">easily</a> make
+                  changes through dev tools and see the effect immediately, and
+                  once satisfied, change the code in sublime
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="anchor" id="stage2"></div>
+
+      <div class="stag">
+        <h2>Stage 2: Automate Your Page</h2>
+
+        <div class="lesson">
+          <h3>Lesson 1: Intro to "Serious" Programming</h3>
+
+          <div class="concept">
+            <h4>computer science</h4>
+
+            <ul class="points">
+              <li>
+                how to solve problems by breaking them into smaller pieces
+              </li>
+              <li>
+                precisely and mechanically describing a sequence of steps to
+                solve a piece in a way that is executable by a computer
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>computer</h4>
+
+            <ul class="points">
+              <li>
+                <strong>universal</strong> machine that can do anything as long
+                as there is a program written for that purpose
+              </li>
+              <li>
+                <strong>useless</strong> machine, that can do nothing unless a
+                program tells it what to do
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>python</h4>
+
+            <ul class="points">
+              <li>
+                named after <a href="https://www.youtube.com/watch?v=WwbnvkMRPKM">
+                Monty Python</a>
+              </li>
+              <li>
+                high level language
+                <ul class="points add">
+                  <li>
+                    python interpreter (a program) 'translates' our code into
+                    zeros and ones
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>language ambiguity</h4>
+
+            <ul class="points">
+              <li>
+                different people might interpret the same message differently
+                due to following different logical rules (interpretation is
+                highly subjective)
+              </li>
+              <li>
+                reason why we need a programming language (less words, less
+                rules, more strict)
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>vocab</h4>
+
+            <ul class="points">
+              <li>
+                <b>expression</b>: valid (executable) programming statement
+              </li>
+              <li>
+                <b>integer</b>: number without a decimal
+              </li>
+              <li>
+                <b>float</b>: number with a decimal
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Lesson 2: Variables and Strings</h3>
+
+          <div class="concept">
+            <h4>variable</h4>
+
+            <ul class="points">
+              <li>
+                kind of container that can hold any assigned (stored) value or
+                any other expression under a name of our choice (almost)
+              </li>
+              <li>
+                the assigned value or any expression can then be used anywhere
+                and any number of times in the rest of the code
+              </li>
+              <li>
+                <strong>
+                  avoiding repetition, improving readability
+                </strong>
+              </li>
+              <li>
+                variables are assigned through <code>=</code> sign (unlike in
+                math, "=" sign does not mean that left and right sides are
+                equal, it is more like arrow - right side is assigned to left
+                side)
+                <ul class="points add">
+                  <li>
+                    syntax: <code>variable_name = expression</code>
+                  </li>
+                  <li>
+                    to assign value 7 to variable <code>days: days = 7 </code>
+                  </li>
+                  <li>
+                    python always evaluates the <strong>right side first</strong>
+                    and only then assigns the result to the variable on the left
+                    side
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>string</h4>
+
+            <ul class="points">
+              <li>
+                sequence of characters between single or double quotes (one or
+                another, but never one at the beginning and the other at the
+                end)
+              </li>
+              <li>
+                we can concatenate strings using <code>+</code> sign
+                (<code>'uda' + 'city'</code> would result in string
+                <code>'udacity'</code>)
+              </li>
+              <li>
+                numbers can be part of strings but they "lose" their
+                mathematical properties and become just letters
+                (<code>'2' + '2'</code> would result in string
+                <code>'22'</code>)
+              </li>
+              <li>
+                each letter in a string has its index number - position within
+                a string -1 (it is -1 because index of first letter is 0)
+              </li>
+              <li>
+                sequencing
+                <ul class="points add">
+                  <li>
+                    we can select part of a string by defining start index position
+                    and end(+1) index position of our selection
+                  </li>
+                  <li>
+                    good explanation can be found
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3574398630/m-48687716">here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Lesson 3: Input -&#62; Function -&#62; Output</h3>
+
+          <div class="concept">
+            <h4>function</h4>
+
+            <ul class="points">
+              <li>
+                sequence of steps that transform given set of inputs into
+                desired set of outputs
+              </li>
+              <li>
+                <em>
+                  once properly designed/written, functions can be called any
+                  number of times and can be used inside other functions
+                </em>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>making vs. using a function</h4>
+
+            <ul class="points">
+              <li>
+                to make a function, we need to define it:
+                <ul class="points add">
+                  <li>
+                    syntax: <code>dev function_name(inputs):</code>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                to use a function, we just need to call it and, based on its
+                purpose, it will (or will not) return some result (output)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Lesson 4&#38;5: Decisions, Repetition and Structured Data</h3>
+
+          <div class="concept">
+            <h4>decisions</h4>
+
+            <ul class="points">
+              <li>
+                one of the core concepts of making programming universal
+              </li>
+              <li>
+                achieved through <code>if</code> statements
+                <ul class="points add">
+                  <li>
+                    basic idea: if something is true, perform a desired action
+                    (otherwise do something else)
+                  </li>
+                  <li>
+                    syntax example: <br>
+                    <img src="images/if.png" alt="if example">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>repetition</h4>
+
+            <ul class="points">
+              <li>
+                necessary for <strong>code efficiency</strong> - we do not have
+                to code the same operation again and again
+              </li>
+              <li>
+                achieved through while and for statements
+                <ul class="points add">
+                  <li>
+                    <code>while</code> - while something is true, keep
+                    performing a desired action
+                  </li>
+                  <li>
+                    <code>for</code> - for defined number of times (usually
+                    linked to range, or number of items in a list) perform a
+                    desired action (often on/with each of those items)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>structured data</h4>
+
+            <ul class="points">
+              <li>
+                list is an example of structured data
+              </li>
+              <li>
+                syntax: <code>[item1, item2, item3, ...]</code>
+              </li>
+              <li>
+                list can contain any data type (string, number, other lists) or
+                even a combination
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p class="quote">
+        <q>
+          The line of code you don't write is the line of code you never have
+          to debug.
+        </q>
+        <br>
+        <em>Steve Jobs</em>
+      </p>
+
+      <p class="quote">
+        <q>
+          It is well known that a vital ingredient of success is not knowing
+          that what you're attempting can't be done.
+        </q>
+        <br>
+        <em>Terry Pratchett</em>
+      </p>
+    </div>
+  </body>
+</html>
